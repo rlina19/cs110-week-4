@@ -1,0 +1,22 @@
+Week 4 experiments
+Pathway:
+Website / 3D page:
+
+Experiment changed the sphere size segment 
+What I expected: bigger sphere
+File and code/value I changed: "sphere" diameter to 25 and segments to 100
+What I observed (or exact error): the sphere is gone
+What I kept, restored, or corrected: changed diameter to 2 and diameter to 10 and it reappeared
+My next test:
+
+Changes I made:
+
+Future tests and ideas:
+
+Final checks
+Website -> 3D page -> website:
+Scene and description agree:
+Narrow and wide layout:
+Keyboard navigation:
+Console errors / unresolved issues:
+Peer observation and correction:
