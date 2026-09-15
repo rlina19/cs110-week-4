@@ -1,0 +1,22 @@
+Week 4 experiments
+Pathway:
+Website / 3D page:
+
+Experiment: I changed the sphere size segment 
+What I expected: a bigger sphere
+File and code/value I changed: "sphere" diameter to 25 and segments to 100
+What I observed (or exact error): the sphere is small
+What I kept, restored, or corrected: changed diameter to 10 and segments to 38 and it reappeared and is bigger
+My next test: I changed the ground size segment and diameter
+
+Changes I made: I changed the width to 30 and height to 36
+
+Future tests and ideas: adding buttons that work and finalize the website
+
+Final checks
+Website -> 3D page -> website:
+Scene and description agree:
+Narrow and wide layout:
+Keyboard navigation:
+Console errors / unresolved issues:
+Peer observation and correction:
