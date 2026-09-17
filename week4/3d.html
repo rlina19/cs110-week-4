@@ -1,24 +1,45 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Week 4 — My 3D view</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <main>
-    <a href="../index.html">← Return to my website</a>
-    <h1>My 3D view</h1>
-    <p id="scene-description">A sphere stands on a flat ground plane. Replace this description with an accurate explanation of your customized scene.</p>
-    <p id="scene-status" role="status">Loading the scene…</p>
-    <canvas id="renderCanvas" tabindex="0" aria-label="Interactive 3D practice scene" aria-describedby="scene-description scene-controls">The practice scene contains a sphere and a ground plane.</canvas>
-    <p id="scene-controls">Drag in the scene to look around. With the scene focused, use the arrow keys to move the camera. Press Tab to leave the scene. The Reset view button restores the starting camera.</p>
-    <button id="reset-view" type="button" disabled>Reset view</button>
-    <noscript><p>JavaScript is disabled. Enable it to run the coding exercise, or ask your instructor for the supported lab route. The written scene description remains available.</p></noscript>
-  </main>
-  <!-- The canvas exists before the engine and your script load. -->
-  <script src="vendor/babylon.js"></script>
-  <script src="js/app.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fridge Siege — 3D Battle</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="battle-page">
+    <header class="battle-header">
+      <nav class="top-nav container" aria-label="Story navigation">
+        <a href="../index.html">Fridge Siege</a>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../story.html">Story</a>
+          <a href="3d.html" class="active">3D Battle</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container battle-layout">
+      <section class="battle-copy">
+        <p class="eyebrow">Final showdown</p>
+        <h1>The rotten core is awake.</h1>
+        <p>
+          The evil fridge hums with spoiled power. Its rotten food is the heart of the
+          malfunction, radiating a toxic corruption through the kitchen. Mr. Clean must
+          find the Arm & Hammer and strike the core before it spreads across the whole house.
+        </p>
+        <p id="scene-status" role="status">Loading the battle scene…</p>
+        <div class="battle-controls">
+          <button id="pulse-button" type="button">Trigger cleaning pulse</button>
+          <button id="reset-view" type="button" class="secondary">Reset view</button>
+        </div>
+      </section>
+
+      <section class="scene-panel">
+        <canvas id="renderCanvas" tabindex="0" aria-label="Babylon.js battle scene with an evil fridge" aria-describedby="scene-status">The 3D scene loads here.</canvas>
+      </section>
+    </main>
+
+    <script src="vendor/babylon.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
