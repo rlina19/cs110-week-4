@@ -1,3 +1,106 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Week 4 starter preview</title><link rel="stylesheet" href="week4/css/styles.css"></head>
-<body><main><h1>Week 4 starter preview</h1><p>This page only previews the starter. In your course project, keep your existing homepage and copy the <code>week4</code> folder beside it.</p><p><a href="week4/3d.html">Open the Babylon.js scene</a></p><p>Add that same link to your own homepage. Your chosen pathway supplies the content for your website.</p></main></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mr. Clean vs. the Evil Fridge</title>
+    <meta
+      name="description"
+      content="An interactive story website about Mr. Clean, the Arm & Hammer, and the evil fridge that spreads rot."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="homepage">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html">Fridge Siege</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="story.html">Story</a>
+          <a href="week4/3d.html">3D Battle</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero container">
+      <section class="hero-copy">
+        <p class="eyebrow">A hero tale of soap, strength, and survival</p>
+        <h1>Mr. Clean must stop the evil fridge before it rots the world.</h1>
+        <p class="lead">
+          Within the rotten walls of the cursed refrigerator, a dark organic power
+          pulses outward. Every second, the radius grows, turning clean places into
+          putrid ruins.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="story.html">Read the story</a>
+          <a class="button secondary" href="week4/3d.html">Face the fridge</a>
+        </div>
+
+        <ul class="stats" aria-label="Story status">
+          <li>
+            <strong>Rotten Radius</strong>
+            <span>Growing by the hour</span>
+          </li>
+          <li>
+            <strong>Hero</strong>
+            <span>Mr. Clean</span>
+          </li>
+          <li>
+            <strong>Weapon</strong>
+            <span>Arm & Hammer</span>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="hero-panel" aria-live="polite">
+        <div class="panel-header">
+          <span class="pulse-dot"></span>
+          <p>Threat level</p>
+        </div>
+        <h2>Organic corruption alert</h2>
+        <div class="meter">
+          <span class="meter-fill"></span>
+        </div>
+        <p class="panel-copy">
+          The fridge’s rotten core is feeding on decay. Only one thing can restore
+          order: a powerful cleaning force paired with the legendary Arm & Hammer.
+        </p>
+        <button class="chapter-trigger" type="button" data-story="chapter-1">
+          Reveal the first clue
+        </button>
+      </aside>
+    </main>
+
+    <section class="story-snippets container" aria-label="Story chapter preview">
+      <article class="snippet" data-story="chapter-1">
+        <span>Chapter 1</span>
+        <h3>The Rotten Core</h3>
+        <p>The fridge awakens, fueled by spoiled food and a power no one can explain.</p>
+      </article>
+      <article class="snippet" data-story="chapter-2">
+        <span>Chapter 2</span>
+        <h3>The Missing Weapon</h3>
+        <p>Mr. Clean learns that the Arm & Hammer is the only force capable of stopping the decay.</p>
+      </article>
+      <article class="snippet" data-story="chapter-3">
+        <span>Chapter 3</span>
+        <h3>The Clean Sweep</h3>
+        <p>He fights across the wasteland, gathering courage and striking the source of the rot.</p>
+      </article>
+    </section>
+
+    <section class="reveal container" aria-live="polite">
+      <div class="reveal-card">
+        <p class="eyebrow">Quest update</p>
+        <h2 id="storyRevealTitle">The first clue has appeared</h2>
+        <p id="storyRevealText">
+          The rotten food inside the fridge is the core of its power. Every moldy bite
+          intensifies the reach of the corruption.
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

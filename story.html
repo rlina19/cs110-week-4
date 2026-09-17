@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fridge Siege — Story</title>
+    <meta
+      name="description"
+      content="Expanded story of the evil fridge, Mr. Clean, the Arm & Hammer, and the battle for peace."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html">Fridge Siege</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="story.html" class="active">Story</a>
+          <a href="week4/3d.html">3D Battle</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container story-layout">
+      <section class="story-card" aria-labelledby="story-title">
+        <p class="eyebrow">The legend unfolds</p>
+        <h1 id="story-title">The Evil Fridge Awakens</h1>
+
+        <div class="story-panel active" data-story="chapter-1">
+          <p>
+            In the quiet of the kitchen, the refrigerator woke with a low, trembling hum.
+            It was no ordinary appliance. Beneath its stainless steel shell, the rotten food
+            inside had become the source of a terrible power. Mold spread like a dark rumor,
+            and every spoiled bite fed the machine with a pulse of organic corruption.
+          </p>
+          <p>
+            The fridge grew stronger with each passing minute. Its ring of rot expanded outward,
+            contaminating clean corners and turning fresh things into ruined, decaying remnants.
+            The world needed a hero, but no one could resist the spread alone.
+          </p>
+        </div>
+
+        <div class="story-panel" data-story="chapter-2">
+          <p>
+            Mr. Clean was called to the scene, but even his shining reputation could not stop the
+            curse. He had the courage to fight, yet the cruel power of the rotten core was too great.
+            He needed something stronger than soap alone. He needed the Arm & Hammer, a legendary
+            weapon said to crush decay and restore order wherever it was unleashed.
+          </p>
+          <p>
+            So the battle began. Mr. Clean traveled across the ruined kitchen, following clues,
+            gathering strength, and refusing to let the evil spread any further. The Arm & Hammer
+            was not just a tool—it was the final promise of purity in a world drowning in rot.
+          </p>
+        </div>
+
+        <div class="story-panel" data-story="chapter-3">
+          <p>
+            At the heart of the fridge, the rotten food pulsed like a black heart. Mr. Clean stood before it,
+            gripping the Arm & Hammer with both hands. He knew the moment had come. A final strike would
+            either restore peace or let the corruption consume the whole room.
+          </p>
+          <p>
+            He swung with unstoppable resolve. The weapon crashed against the core, splitting the rot,
+            scattering its power, and washing the darkness away with a burst of cleansing force.
+            The fridge froze, the hum stopped, and the kitchen was safe again.
+          </p>
+        </div>
+
+        <div class="story-actions">
+          <button class="story-button active" type="button" data-story="chapter-1">Chapter 1</button>
+          <button class="story-button" type="button" data-story="chapter-2">Chapter 2</button>
+          <button class="story-button" type="button" data-story="chapter-3">Chapter 3</button>
+        </div>
+      </section>
+
+      <aside class="story-card" aria-label="Story facts">
+        <p class="eyebrow">Mission briefing</p>
+        <h2 id="questTitle">Current objective</h2>
+        <div class="progress-track" aria-label="Story progress">
+          <span id="storyProgress" class="progress-fill"></span>
+        </div>
+        <p id="storyStatus" class="story-status">The rotten core is spreading. Mr. Clean must investigate the source.</p>
+
+        <div class="decision-list">
+          <button class="decision-button active" type="button" data-choice="investigate">Investigate the rotten core</button>
+          <button class="decision-button" type="button" data-choice="weapon">Search for the Arm & Hammer</button>
+          <button class="decision-button" type="button" data-choice="battle">Prepare the final battle</button>
+        </div>
+
+        <p id="decisionText" class="decision-text">
+          Mr. Clean follows the smell of decay and realizes the rotten food is the engine of the fridge.
+        </p>
+
+        <ul class="story-list">
+          <li>The rotten food inside is the source of the evil power.</li>
+          <li>The corruption spreads in a radius that rots anything nearby.</li>
+          <li>Only Mr. Clean has the will to fight, but he needs the Arm & Hammer.</li>
+          <li>The battle ends when purity destroys the rotten core.</li>
+        </ul>
+
+        <div class="story-actions">
+          <a class="button primary" href="week4/3d.html">Launch 3D scene</a>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
